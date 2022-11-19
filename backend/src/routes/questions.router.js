@@ -4,6 +4,7 @@ const question = require('../controllers/question.controller.js');
 
 router.get('/:id', question.get);
 router.get('/', question.getAll);
+router.get('/random/:id', question.getRandom);
 
 router.post('/', question.create);
 
